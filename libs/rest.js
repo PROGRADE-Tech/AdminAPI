@@ -1,4 +1,4 @@
-var db = require('./db')
+const db = require('./db')
 
 module.exports = {
 	go: function(params) {

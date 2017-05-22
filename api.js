@@ -1,5 +1,5 @@
-var jsonfile = require('jsonfile')
-var rest = require('./libs/rest')
+const jsonfile = require('jsonfile')
+const rest = require('./libs/rest')
 
 jsonfile.readFile('config/auth.json', (err, params) => {
 	if(err) {
