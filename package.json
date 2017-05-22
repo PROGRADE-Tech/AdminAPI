@@ -1,0 +1,28 @@
+{
+  "name": "prograde-adminapi",
+  "version": "1.0.0",
+  "description": "A programming interface we use internally to keep track of our customers and projects.",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PROGRADE-Tech/AdminAPI.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Severin Fürbringer",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/PROGRADE-Tech/AdminAPI/issues"
+  },
+  "homepage": "https://github.com/PROGRADE-Tech/AdminAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jsonfile": "^3.0.0",
+    "mysql2": "^1.2.0"
+  }
+}

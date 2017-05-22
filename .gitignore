@@ -1,3 +1,6 @@
+# Authentification files
+auth.json
+
 # Logs
 logs
 *.log
