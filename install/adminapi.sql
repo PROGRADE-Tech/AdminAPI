@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: May 21, 2017 at 02:23 PM
+-- Generation Time: May 22, 2017 at 06:30 PM
 -- Server version: 10.1.22-MariaDB-1~jessie
 -- PHP Version: 7.0.16
 
@@ -21,6 +21,18 @@ SET time_zone = "+00:00";
 --
 -- Database: `adminapi`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `access_log`
+--
+
+CREATE TABLE `access_log` (
+  `acces_log_id` int(11) NOT NULL,
+  `ip_address` varchar(45) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -152,6 +164,12 @@ CREATE TABLE `protocol` (
 --
 
 --
+-- Indexes for table `access_log`
+--
+ALTER TABLE `access_log`
+  ADD PRIMARY KEY (`acces_log_id`);
+
+--
 -- Indexes for table `customers`
 --
 ALTER TABLE `customers`
@@ -197,6 +215,11 @@ ALTER TABLE `protocol`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `access_log`
+--
+ALTER TABLE `access_log`
+  MODIFY `acces_log_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `customers`
 --
