@@ -10,5 +10,7 @@ module.exports = {
 			user: db_user,
 			password: db_pass
 		})
+
+		callback()
 	}
 }
